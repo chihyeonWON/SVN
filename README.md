@@ -66,3 +66,17 @@ URL of repository에는 아까 생성한 url을 넣어주고 checkout directory�
 다음과 같이 서버의 프로젝트를 checkout한 것을 확인할 수 있다.   
 ![image](https://user-images.githubusercontent.com/58906858/180747667-7a86a7d1-481b-49f3-b48a-3106be35073f.png)
 
+## 이클립스 Subversive 플러그인 사용
+
+서버 저장소에 있는 프로젝트를 이클립스에서 체크아웃을 해본다. SVN Repository Exploring Perspective를 열어주고 오른쪽 마우스 클릭 후 New -> Repository Location을 선택한다.   
+![image](https://user-images.githubusercontent.com/58906858/180748454-53d90bce-4bd7-4662-ba8e-1673065d72d0.png)
+
+url은 VisualSVN Repository의 url주소를 넣고 밑에 user와 password를 입력하여 저장소를 생성한다.   
+생성 후 SVN Repository의 프로젝트를 오른쪽 마우스 클릭 후 check out 메뉴를 선택한다.   
+   
+이제는 프로젝트를 서버에 올려본다. 프로젝트 오른쪽 마우스 클릭 후 Team -> Share Project 메뉴를 선택하고 svn을 선택한다.   
+기존에 등록했떤 저장소를 선택하고 commit 창에서 Resource가 모두 선택된 채로 ok 버튼을 클릭한다.   
+![image](https://user-images.githubusercontent.com/58906858/180750101-f7fe08ed-78a7-421e-8fe9-097a10a147d8.png)
+
+새로고침(F5)를 누르면 해당 프로젝트가 올라간 것을 확인할 수 있고 VisualSVNServer 서버 저장소에서도 새로고침을 눌러 확인할 수 있다.
+![image](https://user-images.githubusercontent.com/58906858/180750333-091e003f-e76a-4c0f-9169-27b036c68dcd.png)
