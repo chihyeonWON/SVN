@@ -80,3 +80,22 @@ url은 VisualSVN Repository의 url주소를 넣고 밑에 user와 password를 �
 
 새로고침(F5)를 누르면 해당 프로젝트가 올라간 것을 확인할 수 있고 VisualSVNServer 서버 저장소에서도 새로고침을 눌러 확인할 수 있다.
 ![image](https://user-images.githubusercontent.com/58906858/180750333-091e003f-e76a-4c0f-9169-27b036c68dcd.png)
+
+## SVN 사용
+
+이클립스에서 올린 프로젝트를 TortoiseSVN을 통해서 체크아웃한다.   
+서버의 프로젝트를 checkout 하기위해 디렉터리 오른쪽 마우스 클릭 후 SVN Checkout을 클릭한다.   
+![image](https://user-images.githubusercontent.com/58906858/180751322-53b90f04-81f9-488c-89e4-80253da5e964.png)
+이제 프로젝트의 일부를 변경하여 커밋을 하고 다른 클라이언트에서 변경된 사항만을 가져오는 update를 수행할 수 있다.   
+프로젝트안의 pom.xml에 주석문을 넣는다.   
+![image](https://user-images.githubusercontent.com/58906858/180752269-eabca0cc-5f2e-46ab-987f-2053b345c8b7.png)
+변경사항이 있는데 서버에 커밋되지않는다면 다음과 같이 빨간색 느낌표로 알려준다.   
+pom.xml 오른쪽 마우스 클릭 후 SVN Commit을 수행한다.
+서버에 변경사항이 반영되고 이 변경사항을 다른 개발자가 자신의 공간으로 가져오려면 이클립스에서 프로젝트 오른쪽 마우스 클릭 후 Team -> Update를 수행하면 서버의 최신사항 즉 변경사항이 반영되어진 프로젝트를 가져올 수 있다.   
+
+Team -> Show History를 수행하면 어떤 파일이 누구에 의해 변경되었는지 리비전 번호는 어떻게 달라졌는 지 등을 알 수 있다.
+![image](https://user-images.githubusercontent.com/58906858/180752893-16386b33-4000-410d-926e-ff953ff4666a.png)
+
+이 외에도 리소스의 이름변경과 이동, 삭제, 브랜치, 태그 등 다양한 기능을 사용할 수 있다.
+
+
