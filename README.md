@@ -46,5 +46,23 @@
 
 ## TortoiseSVN, Subversive 
 
-### SVN 서버와 SVN 클라이언트
+### TortoiseSVN 사용
+
+프로젝트를 github에서 다운받아서 오른쪽 마우스 클릭 후 TortoiseSVN -> import 메뉴를 선택한다.   
+![image](https://user-images.githubusercontent.com/58906858/180745835-96d13d46-00d7-494b-ba3a-ec4b6b33707c.png)
+
+url 입력창이 나오는데 VisualSVN Sever Manager에서 SVNRepository를 선택하고 오른쪽 마우스 클릭 후 Copy URL to Clipboard를 선택하여 저장소의 URL을 복사한다.   
+![image](https://user-images.githubusercontent.com/58906858/180746004-2ecd008a-1ce6-4789-9c18-a8f911a75e39.png)   
+![image](https://user-images.githubusercontent.com/58906858/180746264-52f4963b-6a18-4c2d-8544-f98ed8f0c99b.png)
+
+복사한 url 뒤에 프로젝트 이름을 붙여준다.   
+import Message에는 적당한 메시지를 입력한다. 안 적어도 무방하지만 추후 파일을 비교하거나 찾을 때 메시지가 있으면 편하다.   
+프로젝트를 import 하면 다음과 같이 revision이 1 증가된다.   
+![image](https://user-images.githubusercontent.com/58906858/180746806-066a3f25-9c95-474c-9fd5-bb82651c316e.png)
+
+서버에 올라간 프로젝트를 자신의 로컬 작업 환경으로 가져올 때는 디렉터리를 생성하고 오른쪽 마우스 클릭 후 SVN Checkout메뉴를 선택한다.   
+URL of repository에는 아까 생성한 url을 넣어주고 checkout directory에는 서버의 프로젝트를 넣을 디렉터리의 주소를 넣는다.   
+
+다음과 같이 서버의 프로젝트를 checkout한 것을 확인할 수 있다.   
+![image](https://user-images.githubusercontent.com/58906858/180747667-7a86a7d1-481b-49f3-b48a-3106be35073f.png)
 
